@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/gradient.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h1 id="main">CSS GRADIENT GENERATOR</h1>
+            <span class="label">Style</span>
+            <span class="buttons style">
+                <span id="Linear">Linear</span>
+                <span id="Radical">Radial</span>
+                <span id="Conic">Conic</span>
+            </span>
+            <span class="label">Direction</span>
+            <span class="user case2">Mannual</span>
+            <div class="slider1" id="direction"></div>
+            <span class="user-input case2" >
+                <input type="text" placeholder="0" id="deg" class="input">
+                <span>deg</span>
+                <label for="auto" id="autoBtn" class="autoDeg">Auto</label>
+                <input type="checkbox" id="auto" class="autoDeg">
+            </span>
+
+            <span class="buttons directions case3">
+                <span id="Up"><img src="images/up.png"></span>
+                <span id="0deg"><img src="images/down.png"></span>
+                <span id="90deg"><img src="images/left.png"></span>
+                <span id="270deg"><img src="images/right.png"></span>
+                <span id="225deg"><img src="images/up-right.png"></span>
+                <span id="135deg"><img src="images/up-left.png"></span>
+                <span id="315deg"><img src="images/down-right.png"></span>
+                <span id="45deg"><img src="images/down-left.png"></span>
+            </span>
+
+            <span class="label">Colours</span>
+            <span class="user case1">Auto</span>
+            <div class="slider2" id="coloursRand"></div>
+            <span class="user-input ">
+                <span class="interval case1">Set Time</span>
+                <input type="text" placeholder="1s" class="interval input case1" id="interval-val">
+                <span class="buttons btnStart case1" >
+                    <span id="start">Start</span>
+                </span>
+                <span class="buttons btn1 generateBtn">
+                    <span id="new" class="case4">Generate New</span>
+                </span>
+            </span>
+            <div class="colour">
+                <input type="color" id="clr1" class="clr">
+                <input type="color" id="clr2" class="clr">
+            </div>
+
+            <span class="get" id="get-css">Get CSS</span>
+            <span class="get" id="get-js">Get JS</span>
+
+        </div>
+
+        <div class="canvas">
+            <p id="canvas-text"></p>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
